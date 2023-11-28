@@ -1,0 +1,4746 @@
+DBLUN10
+*SYSTEM
+object_id double
+flag int
+name char[100]
+short_name char[12]
+creation_date char[10]
+semantics_desc desc
+technical_desc desc
+sys_mo rel
+sys_sch rel
+link rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*META_OBJECT
+object_id double
+flag int
+name char[100]
+type short
+semantics_desc desc
+mo_mp rel
+concept_mo rel
+*META_PROPERTY
+object_id double
+flag int
+name char[100]
+type short
+funct int
+semantics_desc desc
+*SCHEMA
+object_id double
+flag int
+name char[100]
+short_name char[12]
+version char[16]
+creation_date char[10]
+last_update char[10]
+lock char
+type char
+semantics_desc desc
+technical_desc desc
+trace_on int
+from rel
+to rel
+is_in rel
+sch_do rel
+sch_col rel
+sch_inst rel
+owner_pu rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*ENTITY_TYPE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+owner_att rel
+owner_group rel
+col_do2 rel
+owner_pu rel
+et_role1 rel
+decomp rel
+general rel
+domain rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*REL_TYPE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+owner_att rel
+owner_group rel
+col_do2 rel
+owner_pu rel
+rt_type rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*CO_ATTRIBUTE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+min_rep unsigned int
+max_rep unsigned int
+set_type char
+owner_att rel
+owner_group rel
+col_do2 rel
+domain rel
+at_ro_gr rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*SI_ATTRIBUTE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+min_rep unsigned int
+max_rep unsigned int
+set_type char
+stable char
+recyclable char
+type char
+length unsigned int
+decim short
+owner_group rel
+col_do2 rel
+domain rel
+at_ro_gr
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*ROLE
+object_id double
+flag int
+name char[100]
+min_con unsigned int
+max_con unsigned int
+aggregation char
+semantics_desc desc
+technical_desc desc
+at_ro_gr
+et_role2 rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*ET_ROLE
+object_id double
+flag int
+*GROUP
+object_id double
+flag int
+name char[100]
+type char
+funct int
+min_rep unsigned int
+max_rep unsigned int
+semantics_desc desc
+technical_desc desc
+at_ro_gr
+gr_comp rel
+member_gr rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*COMPONENT
+object_id double
+flag int
+*MEMBER_CST
+object_id double
+flag int
+mem_role char
+*CONSTRAINT
+object_id double
+flag int
+type char
+mbr_cst rel
+go_uo rel
+*COLLECTION
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+col_do1 rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*COL_DO
+object_id double
+flag int
+*CLUSTER
+object_id double
+flag int
+cluster_id char[100]
+type int
+criterion char[30]
+special rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*SUB_TYPE
+object_id double
+flag int
+value char[30]
+go_uo rel
+*USER_VIEW
+object_id double
+flag int
+name char[100]
+type int
+zoom int
+reduce int
+xgrid int
+ygrid int
+font_size int
+font_name char[30]
+text_font_size int
+text_font_name char[30]
+markplan int
+uv_uo rel
+*USER_OBJECT
+object_id double
+flag int
+posx int
+posy int
+color int
+*CONNECTION
+object_id double
+flag int
+type char[10]
+seq_nbr int
+*TEXT
+object_id double
+flag int
+name char[100]
+version char[16]
+path char[260]
+creation_date char[10]
+last_update char[10]
+type_of_file char[10]
+num_line int
+lock char
+sem_desc desc
+tech_desc desc
+from rel
+to rel
+is_in rel
+text_inst rel
+line rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*LINE
+object_id double
+flag int
+num int
+description desc
+go_uo rel
+*PROD_SET
+object_id double
+flag int
+name char[100]
+version char[16]
+creation_date char[10]
+last_update char[10]
+lock char
+sem_desc desc
+tech_desc desc
+from rel
+to rel
+is_in rel
+contains rel
+set_inst rel
+go_uo rel
+*PROD_SET_ELEM
+object_id double
+flag int
+*PROC_UNIT
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+type char
+mode char
+owner_group rel
+col_do2 rel
+p_decl rel
+p_fct_call rel
+invokes_pu rel
+pu_made_of rel
+cons_pu rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*ENVIRONMENT
+object_id double
+flag int
+name char[100]
+type char
+mode char
+semantics_desc desc
+technical_desc desc
+go_nn_note rel
+go_uo rel
+*STATE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+owner_group rel
+col_do2 rel
+st_env rel
+go_nn_note rel
+go_uo rel
+*ELEMENT
+object_id double
+flag int
+type char
+description desc
+p_made_of rel
+p_part_of rel
+go_nn_note rel
+go_uo rel
+*REL_ELEMENT
+object_id double
+flag int
+name char[100]
+type char
+mode char
+semantics_desc desc
+technical_desc desc
+go_nn_note rel
+go_uo rel
+*P_EXPRESSION
+object_id double
+flag int
+oper int
+constant char[255]
+description desc
+sub_expression rel
+go_uo rel
+*CONSUMPTION
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+owner_group rel
+col_do2 rel
+cons_res rel
+cons_role rel
+cons_pu rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*CONS_PU
+object_id double
+flag int
+name char[100]
+min_card int
+max_card int
+semantics_desc desc
+technical_desc desc
+go_nn_note rel
+go_uo rel
+*CONS_RES
+object_id double
+flag int
+name char[100]
+min_card int
+max_card int
+semantics_desc desc
+technical_desc desc
+go_nn_note rel
+go_uo rel
+*CONS_ROLE
+object_id double
+flag int
+name char[100]
+min_card int
+max_card int
+semantics_desc desc
+technical_desc desc
+go_nn_note rel
+go_uo rel
+*RESOURCE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+type char
+owner_group rel
+col_do2 rel
+cons_res rel
+cp_res rel
+re_gen rel
+re_spec rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*RES_ROLE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc desc
+technical_desc desc
+owner_group rel
+col_do2 rel
+cons_role rel
+cp_rol rel
+ro_gen rel
+ro_spec rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*RE_ISA
+object_id double
+flag int
+name char[100]
+semantics_desc desc
+technical_desc desc
+go_nn_note rel
+go_uo rel
+*RO_ISA
+object_id double
+flag int
+name char[100]
+semantics_desc desc
+technical_desc desc
+go_nn_note rel
+go_uo rel
+*CAN_PLAY
+object_id double
+flag int
+go_nn_note rel
+go_uo rel
+*DYNAMIC_PROPERTY
+mp_id double
+object_id double
+value text
+*METHODOLOGY
+object_id double
+title char[100]
+version char[16]
+date char[10]
+author char[100]
+help_file char[255]
+semantics_desc desc
+user_viewable rel
+viewable_note rel
+*STATEMENT
+object_id double
+type int
+state char
+glbtrsf trsfscr
+sub_stmt rel
+strategy rel
+condition rel
+stmt_param rel
+pp_inst rel
+ep_inst rel
+cs_inst rel
+*EXPRESSION
+object_id double
+type int
+not char
+weak char
+sub_expression rel
+cond_dec rel
+expr_param rel
+*PARAMETER
+object_id double
+integer int
+string char[255]
+analysis_expr anallist
+type char
+mode char
+usage char
+*PROCESS_TYPE
+object_id double
+name char[100]
+title char[100]
+explain char[100]
+semantics_desc desc
+perform rel
+form_arg rel
+invokes rel
+*TOOLBOX
+object_id double
+name char[100]
+title char[100]
+functions list_int
+semantics_desc desc
+uses rel
+*TEXT_TYPE
+object_id double
+name char[100]
+title char[100]
+weak char
+min_mul int
+max_mul int
+usage char
+semantics_desc desc
+act_arg rel
+ttext_inst rel
+*SCHEMA_TYPE
+object_id double
+name char[100]
+title char[100]
+weak char
+min_mul int
+max_mul int
+usage char
+semantics_desc desc
+act_arg rel
+tschema_inst rel
+*PROD_SET_TYPE
+object_id double
+name char[100]
+title char[100]
+min_mul int
+max_mul int
+usage char
+semantics_desc desc
+actarg rel
+tset_inst rel
+*TEXT_MODEL
+object_id double
+name char[100]
+title char[100]
+semantics_desc desc
+default_ext list_char[3]
+grammar char[255]
+model_expr rel
+specialization rel
+text_conform rel
+*SCHEMA_MODEL
+object_id double
+name char[100]
+title char[100]
+semantics_desc desc
+constraints anallist
+model_expr rel
+specialization rel
+schema_conform rel
+have_concept rel
+*MOD_CONCEPT
+object_id double
+contextual_name char[100]
+funct1 unsigned int
+funct2 unsigned int
+*ENGINEERING_PROCESS
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+semantics_desc desc
+flag int
+io_proc rel
+made_of rel
+start rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_nn_note rel
+*DECISION
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+yes_no char
+semantics_desc desc
+flag int
+io_proc rel
+go_uo rel
+go_nn_note rel
+*PRIMITIVE_PROCESS
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+semantics_desc desc
+flag int
+io_proc rel
+go_uo rel
+go_nn_note rel
+*CONTROL_STRUCTURE
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+golist list_int
+semantics_desc desc
+io_proc rel
+*SCHEMA_INSTANCE
+object_id double
+usage char
+checkpoint char[100]
+flag int
+go_nn_note rel
+*TEXT_INSTANCE
+object_id double
+usage char
+checkpoint char[100]
+flag int
+go_nn_note rel
+*PROD_SET_INSTANCE
+object_id double
+usage char
+checkpoint char[100]
+flag int
+go_nn_note rel
+*NOTE
+object_id double
+flag int
+description desc
+note_nn_note rel
+go_uo rel
+*NN_NOTE
+object_id double
+flag int
+*LOG
+schema double
+length long
+text FILE
+*
+*0
+0
+0
+Genotypisierung
+Gety
+20180605
+
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+-
+224
+202
+71
+-
+63
+-
+1
+-
+-
+-
+-
+-
+-
+*1
+2
+0
+Project
+1
+
+-
+-
+*1
+3
+0
+Schema
+2
+
+22
+23
+205
+-
+-
+*1
+4
+0
+Text
+31
+
+24
+25
+-
+-
+*1
+5
+0
+Product set
+41
+
+26
+-
+-
+*1
+6
+0
+Entity type
+11
+
+28
+27
+206
+-
+-
+*1
+7
+0
+Rel-type
+12
+
+30
+29
+-
+-
+*1
+8
+0
+Atomic attribute
+7
+
+38
+37
+36
+35
+34
+33
+208
+-
+-
+*1
+9
+0
+Compound attribute
+6
+
+40
+39
+-
+-
+*1
+10
+0
+Group
+16
+
+44
+43
+209
+-
+-
+*1
+11
+0
+Role
+14
+
+32
+31
+-
+-
+*1
+12
+0
+Collection
+4
+
+41
+42
+207
+-
+-
+*1
+13
+0
+Processing unit
+40
+
+46
+45
+-
+-
+*1
+14
+0
+Processing unit relation
+45
+
+62
+61
+-
+-
+*1
+15
+0
+Association
+47
+
+54
+53
+-
+-
+*1
+16
+0
+Use case association role
+68
+
+56
+55
+-
+-
+*1
+17
+0
+Actor association role
+66
+
+58
+57
+-
+-
+*1
+18
+0
+Actor
+48
+
+50
+49
+-
+-
+*1
+19
+0
+Actor generalization
+62
+
+52
+51
+-
+-
+*1
+20
+0
+State
+61
+
+59
+60
+-
+-
+*1
+21
+0
+In-out
+43
+
+48
+47
+-
+-
+*2
+205
+0
+line
+86
+0
+
+*2
+23
+0
+Stereotype
+86
+14
+
+*2
+22
+0
+productType
+86
+6
+#VALUES=
+COBOL
+CODASYL
+IMS
+Relational
+SQL
+XML
+C/C++
+Java
+#
+*2
+25
+0
+Stereotype
+86
+14
+
+*2
+24
+0
+productType
+86
+6
+#VALUES=
+COBOL
+CODASYL
+IMS
+Relational
+SQL
+XML
+C/C++
+Java
+#
+*2
+26
+0
+Stereotype
+86
+14
+
+*2
+206
+0
+line
+86
+0
+
+*2
+27
+0
+Stereotype
+86
+14
+
+*2
+28
+0
+MappingOID
+78
+10
+
+*2
+29
+0
+Stereotype
+86
+14
+
+*2
+30
+0
+MappingOID
+78
+10
+
+*2
+208
+0
+line
+86
+0
+
+*2
+33
+0
+Value constraint
+86
+10
+
+*2
+34
+0
+Stereotype
+86
+14
+
+*2
+35
+0
+physType
+86
+2
+
+*2
+36
+0
+physLen
+78
+2
+
+*2
+37
+0
+MappingOID
+78
+10
+
+*2
+38
+0
+Default value
+86
+2
+
+*2
+39
+0
+Stereotype
+86
+14
+
+*2
+40
+0
+MappingOID
+78
+10
+
+*2
+209
+0
+line
+86
+0
+
+*2
+43
+0
+User-constraint
+86
+1
+
+*2
+44
+0
+MappingOID
+78
+10
+
+*2
+31
+0
+Stereotype
+86
+14
+
+*2
+32
+0
+MappingOID
+78
+10
+
+*2
+207
+0
+line
+86
+0
+
+*2
+42
+0
+MappingOID
+78
+10
+
+*2
+41
+0
+Stereotype
+86
+14
+#VALUES=
+Area
+DBD
+SQLSchema
+SubSchema
+TableSpace
+#
+*2
+45
+0
+Stereotype
+86
+14
+
+*2
+46
+0
+MappingOID
+78
+10
+
+*2
+61
+0
+Stereotype
+86
+14
+
+*2
+62
+0
+MappingOID
+78
+10
+
+*2
+53
+0
+Stereotype
+86
+14
+
+*2
+54
+0
+MappingOID
+78
+10
+
+*2
+55
+0
+Stereotype
+86
+14
+
+*2
+56
+0
+MappingOID
+78
+10
+
+*2
+57
+0
+Stereotype
+86
+14
+
+*2
+58
+0
+MappingOID
+78
+10
+
+*2
+49
+0
+Stereotype
+86
+14
+
+*2
+50
+0
+MappingOID
+78
+10
+
+*2
+51
+0
+Stereotype
+86
+14
+
+*2
+52
+0
+MappingOID
+78
+10
+
+*2
+60
+0
+MappingOID
+78
+10
+
+*2
+59
+0
+Stereotype
+86
+14
+#VALUES=
+ET
+RT
+Att
+Coll
+#
+*2
+47
+0
+Stereotype
+86
+14
+
+*2
+48
+0
+MappingOID
+78
+10
+
+*3
+71
+256
+Pyroeinlesen
+pyro
+1
+20180605
+20180814
+T
+E
+
+
+1
+-
+-
+-
+251
+198
+151
+118
+244
+262
+112
+83
+161
+79
+116
+114
+169
+149
+246
+156
+237
+-
+-
+72
+74
+77
+212
+229
+-
+-
+73
+-
+-
+78
+103
+-
+-
+-
+-
+*4
+79
+0
+PyroErgebnis
+
+
+
+198
+116
+114
+112
+237
+-
+258
+-
+-
+-
+163
+-
+-
+-
+-
+80
+-
+-
+-
+-
+*4
+83
+0
+patienten
+
+
+
+118
+251
+-
+120
+-
+-
+-
+173
+-
+-
+-
+-
+84
+-
+-
+-
+-
+*4
+149
+0
+Sample_pyro
+
+
+
+151
+156
+262
+244
+246
+-
+248
+-
+-
+-
+194
+165
+-
+-
+-
+-
+150
+-
+-
+-
+-
+*5
+161
+0
+pyro_has_mul_sample
+
+
+
+-
+-
+-
+-
+162
+164
+-
+166
+-
+-
+-
+-
+*5
+169
+0
+sample_has_one_pyro
+
+
+
+-
+-
+-
+-
+172
+177
+193
+-
+174
+-
+-
+-
+-
+*7
+262
+0
+quality
+
+
+
+1
+1
+ 
+F
+T
+V
+7
+0
+-
+-
+-
+-
+263
+-
+-
+-
+-
+*7
+237
+0
+SNPID
+
+
+
+1
+1
+ 
+T
+T
+N
+1
+0
+-
+-
+-
+261
+-
+238
+-
+-
+-
+-
+*7
+198
+0
+chromsom
+
+
+
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+199
+-
+-
+-
+-
+*7
+112
+0
+note
+
+Positon
+
+1
+1
+ 
+F
+T
+N
+15
+0
+-
+-
+-
+-
+113
+-
+-
+-
+-
+*7
+114
+0
+rsname
+
+
+
+1
+1
+ 
+F
+T
+V
+15
+0
+-
+-
+-
+-
+115
+-
+-
+-
+-
+*7
+116
+0
+result
+
+
+
+1
+1
+ 
+F
+T
+V
+3
+0
+-
+-
+-
+-
+117
+-
+-
+-
+-
+*7
+118
+0
+journal_number
+
+
+
+1
+1
+ 
+F
+T
+V
+7
+0
+-
+-
+-
+121
+-
+119
+-
+-
+-
+-
+*7
+151
+0
+journal_number
+
+
+
+1
+1
+ 
+F
+T
+V
+7
+0
+-
+-
+-
+-
+152
+-
+-
+-
+-
+*7
+156
+0
+SNPID
+
+
+
+1
+1
+ 
+F
+T
+V
+15
+0
+-
+-
+-
+-
+157
+-
+-
+-
+-
+*7
+244
+0
+match_result
+
+
+
+1
+1
+ 
+F
+T
+V
+5
+0
+-
+-
+-
+-
+245
+-
+-
+-
+-
+*7
+246
+0
+SNP_to_journal_number
+
+
+
+1
+1
+ 
+F
+T
+N
+10
+0
+-
+-
+-
+249
+-
+247
+-
+-
+-
+-
+*7
+251
+0
+...
+
+
+
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+252
+-
+-
+-
+-
+*8
+164
+0
+
+1
+N
+ 
+
+
+-
+165
+-
+168
+-
+-
+-
+-
+*8
+162
+0
+
+0
+N
+ 
+
+
+-
+163
+-
+167
+-
+-
+-
+-
+*8
+193
+0
+
+1
+1
+ 
+
+
+-
+194
+-
+195
+-
+-
+-
+-
+*8
+177
+0
+
+0
+N
+ 
+
+
+-
+-
+178
+-
+-
+-
+-
+*8
+172
+0
+
+0
+N
+ 
+
+
+-
+173
+-
+176
+-
+-
+-
+-
+*9
+163
+0
+*9
+173
+0
+*9
+165
+0
+*9
+194
+0
+*10
+258
+0
+IDPyroErgebnis
+A
+1
+0
+1
+
+
+-
+261
+-
+-
+260
+-
+-
+-
+-
+*10
+120
+0
+IDSamples
+A
+1
+0
+N
+
+
+-
+121
+-
+-
+122
+-
+-
+-
+-
+*10
+248
+0
+IDSample_pyro
+A
+1
+0
+N
+
+
+-
+249
+-
+-
+250
+-
+-
+-
+-
+*11
+261
+0
+*11
+121
+0
+*11
+249
+0
+*18
+204
+0
+
+0
+100
+100
+0
+0
+0
+
+0
+
+1
+-
+*18
+64
+0
+
+0
+100
+100
+0
+0
+0
+
+0
+
+1
+-
+*18
+69
+0
+
+23
+100
+100
+0
+0
+0
+
+0
+
+1
+70
+103
+104
+216
+217
+233
+234
+-
+*18
+226
+0
+
+0
+100
+100
+0
+0
+0
+
+0
+
+1
+-
+*18
+73
+0
+
+23
+100
+100
+0
+0
+0
+
+0
+
+1
+78
+80
+84
+113
+115
+117
+119
+122
+150
+152
+157
+166
+167
+168
+174
+176
+178
+195
+199
+238
+245
+247
+250
+252
+260
+263
+-
+*18
+1
+0
+
+23
+100
+100
+0
+0
+0
+
+0
+
+1
+215
+232
+-
+*19
+263
+0
+0
+0
+0
+*19
+232
+0
+0
+20000
+0
+*19
+215
+0
+0
+20000
+0
+*19
+234
+0
+30000
+44100
+0
+*19
+233
+0
+30000
+59100
+0
+*19
+217
+0
+30000
+44100
+0
+*19
+216
+0
+30000
+59100
+0
+*19
+104
+0
+30000
+14100
+0
+*19
+70
+0
+100000
+10000
+0
+*19
+260
+0
+0
+0
+0
+*19
+122
+0
+0
+0
+0
+*19
+250
+0
+0
+0
+0
+*19
+167
+0
+95136
+26550
+0
+*19
+168
+0
+168484
+26550
+0
+*19
+176
+0
+205698
+97711
+0
+*19
+178
+0
+205698
+77875
+0
+*19
+195
+0
+205698
+57737
+0
+*19
+238
+0
+0
+0
+0
+*19
+199
+0
+0
+0
+0
+*19
+113
+0
+0
+0
+0
+*19
+115
+0
+0
+0
+0
+*19
+117
+0
+0
+0
+0
+*19
+119
+0
+0
+0
+0
+*19
+152
+0
+0
+0
+0
+*19
+157
+0
+0
+0
+0
+*19
+245
+0
+0
+0
+0
+*19
+247
+0
+0
+0
+0
+*19
+252
+0
+0
+0
+0
+*19
+166
+0
+131809
+26550
+0
+*19
+174
+0
+205698
+77875
+0
+*19
+80
+0
+53900
+26550
+0
+*19
+84
+0
+205698
+122000
+0
+*19
+150
+0
+205698
+26550
+0
+*19
+103
+0
+30000
+29100
+0
+*19
+78
+0
+32000
+4000
+0
+*21
+202
+0
+Genotypisierung.sql
+1
+P:\Public\Users\Christoph\ba
+20180605
+20180605
+G_MYSQL
+48
+T
+
+
+-
+-
+-
+203
+213
+214
+-
+-
+204
+-
+-
+216
+215
+-
+-
+-
+-
+*21
+224
+0
+Genotypisierung.sql
+1_1
+P:\Public\Users\Christoph\ba
+20180607
+20180607
+G_MYSQL
+49
+T
+
+
+-
+-
+-
+225
+230
+231
+-
+-
+226
+-
+-
+233
+232
+-
+-
+-
+-
+*40
+205
+71
+202:15,224:15
+*40
+28
+79
+79
+*40
+206
+79
+202:22,224:22
+*40
+28
+83
+83
+*40
+206
+83
+202:37,224:36
+*40
+28
+149
+149
+*40
+206
+149
+202:31,224:30
+*40
+30
+161
+161
+*40
+30
+169
+169
+*40
+37
+262
+262
+*40
+37
+237
+237
+*40
+37
+198
+198
+*40
+208
+198
+202:23,224:23
+*40
+37
+112
+112
+*40
+208
+112
+202:26,224:26
+*40
+37
+114
+114
+*40
+208
+114
+202:25,224:25
+*40
+37
+116
+116
+*40
+208
+116
+202:24,224:24
+*40
+37
+118
+118
+*40
+208
+118
+202:38,224:37
+*40
+37
+151
+151
+*40
+208
+151
+202:32,224:31
+*40
+37
+156
+156
+*40
+208
+156
+202:33,224:32
+*40
+37
+244
+244
+*40
+37
+246
+246
+*40
+37
+251
+251
+*40
+44
+258
+258
+*40
+44
+120
+120
+*40
+209
+120
+202:39,224:38
+*40
+44
+248
+248
+*40
+32
+164
+164
+*40
+32
+162
+162
+*40
+32
+193
+193
+*40
+32
+177
+177
+*40
+32
+172
+172
+*41
+63
+
+
+20180605
+
+
+
+64
+-
+-
+*42
+210
+17
+0
+-
+-
+-
+-
+-
+211
+-
+-
+-
+*42
+66
+13
+0
+-
+-
+67
+-
+-
+-
+-
+-
+-
+*42
+75
+18
+0
+-
+-
+-
+-
+-
+76
+-
+-
+-
+*42
+227
+17
+0
+-
+-
+-
+-
+-
+228
+-
+-
+-
+*45
+67
+No_method
+No method
+
+
+63
+-
+-
+-
+*46
+65
+Everything
+Do whatever you want
+14001
+-
+
+66
+-
+*53
+68
+Genotypisierung
+20180605
+091150
+
+
+T
+
+0
+72
+74
+203
+214
+225
+231
+-
+76
+211
+228
+-
+63
+-
+69
+-
+-
+70
+-
+-
+*55
+211
+Generate SQL
+20180605
+103542
+20180605
+103542
+F
+
+0
+212
+213
+-
+217
+-
+-
+*55
+76
+New schema
+20180605
+091510
+20180605
+091510
+F
+
+0
+77
+-
+104
+-
+-
+*55
+228
+Generate SQL
+20180607
+085647
+20180607
+085647
+F
+
+0
+229
+230
+-
+234
+-
+-
+*57
+212
+i
+§Generate SQL  20180605  103542
+0
+-
+*57
+72
+C
+
+0
+-
+*57
+74
+n
+
+0
+-
+*57
+77
+o
+
+0
+-
+*57
+229
+i
+§Generate SQL  20180607  085647
+0
+-
+*58
+214
+n
+
+0
+-
+*58
+213
+o
+
+0
+-
+*58
+203
+C
+
+0
+-
+*58
+225
+C
+
+0
+-
+*58
+230
+o
+
+0
+-
+*58
+231
+n
+
+0
+-
+*62
+71
+37140
+*POT "begin-file"
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 112
+		%NAM "Position"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP N
+		%FLA "r"
+		%LEN 15
+		%DEC 0
+	%END
+	%OID 112
+	%NAM "Notes"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP N
+	%LEN 15
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 116
+		%NAM "Reslut"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 116
+	%NAM "result"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 105
+		%NAM "SampleID"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP V
+		%FLA "r"
+		%LEN 7
+		%DEC 0
+	%END
+	%OID 105
+	%NAM "sample-text"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP V
+	%LEN 7
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 151
+		%NAM "SampleID"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%CAR 1-1
+		%TYP V
+		%FLA "r"
+		%LEN 7
+		%DEC 0
+	%END
+	%OID 151
+	%NAM "sample-text"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%CAR 1-1
+	%TYP V
+	%LEN 7
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 114
+		%NAM "EntryID"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP V
+		%FLA "r"
+		%LEN 15
+		%DEC 0
+	%END
+	%OID 114
+	%NAM "name"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP V
+	%LEN 15
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 112
+		%NAM "Notes"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP N
+		%FLA "r"
+		%LEN 15
+		%DEC 0
+	%END
+	%OID 112
+	%NAM "note"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP N
+	%LEN 15
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 116
+		%NAM "result"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 116
+	%NAM "result"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP V
+	%LEN 3
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_ent"
+*CRE ENT
+%BEG
+	%OID 196
+	%NAM "ENTITY"
+	%POX 88500
+	%POY 69100
+	%OWN 1 "Pyroeinlesen"/"1" 71
+	%MET "MappingOID" "196" "NUM"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+%END
+*POT "##1##getent"
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 196
+		%NAM "ENTITY"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+	%END
+	%OID 196
+	%NAM "Chrom_rs"
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*POT "##1##move"
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 79
+		%NAM "PyroErgebnis"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 52200
+		%POY 28900
+	%END
+	%OID 79
+	%NAM "PyroErgebnis"
+	%POX 52200
+	%POY 28500
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 161
+		%NAM "pyro_has_mul_sample"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 130750
+		%POY 28900
+	%END
+	%OID 161
+	%NAM "pyro_has_mul_sample"
+	%POX 130750
+	%POY 28700
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 162
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%POX 93775
+		%POY 28900
+	%END
+	%OID 162
+	%POX 93775
+	%POY 28600
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 164
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POX 167725
+		%POY 28900
+	%END
+	%OID 164
+	%POX 167725
+	%POY 28800
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 198
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "198" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 198
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 198
+	%NAM "chromsom"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 200
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."chromsom" 198
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "200" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##delete"
+*DEL SIA
+%BEG
+	%OID 200
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."chromsom" 198
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "200" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##delete"
+*DEL ENT
+%BEG
+	%OID 196
+	%NAM "Chrom_rs"
+	%POX 88500
+	%POY 69100
+	%OWN 1 "Pyroeinlesen"/"1" 71
+	%MET "MappingOID" "196" "NUM"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+%END
+*POT "##1##move"
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 149
+		%NAM "Sample_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 211908
+		%POY 28900
+	%END
+	%OID 149
+	%NAM "Sample_pyro"
+	%POX 212308
+	%POY 28900
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 161
+		%NAM "pyro_has_mul_sample"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 130750
+		%POY 28700
+	%END
+	%OID 161
+	%NAM "pyro_has_mul_sample"
+	%POX 130946
+	%POY 28700
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 162
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%POX 93775
+		%POY 28600
+	%END
+	%OID 162
+	%POX 93879
+	%POY 28600
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 164
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POX 167725
+		%POY 28800
+	%END
+	%OID 164
+	%POX 168014
+	%POY 28800
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 169
+		%NAM "sample_has_one_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 211908
+		%POY 77875
+	%END
+	%OID 169
+	%NAM "sample_has_one_pyro"
+	%POX 212108
+	%POY 77875
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 172
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%ETR 3 "Pyroeinlesen"/"1"."Samples" 83
+		%POX 211908
+		%POY 97711
+	%END
+	%OID 172
+	%POX 212008
+	%POY 97711
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+	%ETR 3 "Pyroeinlesen"/"1"."Samples" 83
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 177
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%POX 211908
+		%POY 77875
+	%END
+	%OID 177
+	%POX 212008
+	%POY 77875
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 193
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POX 211908
+		%POY 57737
+	%END
+	%OID 193
+	%POX 212208
+	%POY 57737
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*TRF gen_mysql_sql
+%BEG
+	%NAM "Pyroeinlesen"
+	%VER "1"
+	&MOD SCH
+	%BEG
+		*OLD SCH
+		%BEG
+			%OID 71
+			%NAM "Pyroeinlesen"
+			%VER "1"
+		%END
+		%OID 71
+		%NAM "Pyroeinlesen"
+		%VER "1"
+		%MET "line" "202:15" "V"
+	%END
+	&MOD ENT
+	%BEG
+		*OLD ENT
+		%BEG
+			%OID 79
+			%NAM "PyroErgebnis"
+			%OWN 1 "Pyroeinlesen"/"1" 71
+		%END
+		%OID 79
+		%NAM "PyroErgebnis"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%MET "line" "202:22" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 198
+			%NAM "chromsom"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 198
+		%NAM "chromsom"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:23" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 116
+			%NAM "result"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 116
+		%NAM "result"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:24" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 114
+			%NAM "name"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 114
+		%NAM "name"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:25" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 112
+			%NAM "note"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 112
+		%NAM "note"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:26" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 105
+			%NAM "sample-text"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 105
+		%NAM "sample-text"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:27" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 107
+			%NAM "IDPyroErgebnis"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 107
+		%NAM "IDPyroErgebnis"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:28" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 130
+			%NAM "IDPyroErgebnis_1"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 130
+		%NAM "IDPyroErgebnis_1"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:29" "V"
+	%END
+	&MOD ENT
+	%BEG
+		*OLD ENT
+		%BEG
+			%OID 149
+			%NAM "Sample_pyro"
+			%OWN 1 "Pyroeinlesen"/"1" 71
+		%END
+		%OID 149
+		%NAM "Sample_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%MET "line" "202:31" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 151
+			%NAM "sample-text"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%END
+		%OID 151
+		%NAM "sample-text"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:32" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 156
+			%NAM "EntryID"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%END
+		%OID 156
+		%NAM "EntryID"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:33" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 153
+			%NAM "IDSample_has_pyro"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%END
+		%OID 153
+		%NAM "IDSample_has_pyro"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:34" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 158
+			%NAM "IDSample_has_pyro_1"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%END
+		%OID 158
+		%NAM "IDSample_has_pyro_1"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:35" "V"
+	%END
+	&MOD ENT
+	%BEG
+		*OLD ENT
+		%BEG
+			%OID 83
+			%NAM "Samples"
+			%OWN 1 "Pyroeinlesen"/"1" 71
+		%END
+		%OID 83
+		%NAM "Samples"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%MET "line" "202:37" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 118
+			%NAM "SampleID"
+			%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+		%END
+		%OID 118
+		%NAM "SampleID"
+		%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+		%MET "line" "202:38" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 120
+			%NAM "IDSamples"
+			%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+		%END
+		%OID 120
+		%NAM "IDSamples"
+		%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+		%MET "line" "202:39" "V"
+	%END
+	*POT "§Generate SQL  20180605  103542"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 114
+		%NAM "name"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP V
+		%FLA "r"
+		%LEN 15
+		%DEC 0
+	%END
+	%OID 114
+	%NAM "rsname"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP V
+	%LEN 15
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##delete"
+*DEL SIA
+%BEG
+	%OID 105
+	%NAM "sample-text"
+	%POX 0
+	%POY 0
+	%SED 8
+SampleID
+%EDS
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."note" 112
+	%CAR 1-1
+	%TYP V
+	%LEN 7
+	%MET "Default value" "0001/17" "VU"
+	%MET "MappingOID" "105" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+	%MET "line" "202:27" "V"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 107
+			%NAM "IDPyroErgebnis"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."sample-text" 105
+		%END
+		%OID 107
+		%NAM "IDPyroErgebnis"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%COM #
+	%END
+	&DEL GRP
+	%BEG
+		%OID 107
+		%NAM "IDPyroErgebnis"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%TYP A
+		%FLA "P"
+		%MET "MappingOID" "107" "NUM"
+		%MET "line" "202:28" "V"
+		&MOD GRP
+		%BEG
+			*OLD GRP
+			%BEG
+				%OID 107
+				%NAM "IDPyroErgebnis"
+				%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%END
+			%OID 107
+			%NAM "IDPyroErgebnis"
+		%END
+	%END
+%END
+*POT "##1##delete"
+*DEL GRP
+%BEG
+	%OID 130
+	%NAM "IDPyroErgebnis_1"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."rsname" 114
+	%TYP A
+	%FLA "S"
+	%MET "MappingOID" "130" "NUM"
+	%MET "line" "202:29" "V"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 130
+			%NAM "IDPyroErgebnis_1"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 130
+		%NAM "IDPyroErgebnis_1"
+	%END
+%END
+*POT "##1##new_id"
+*CRE GRP
+%BEG
+	%OID 218
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."rsname" 114
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "218" "NUM"
+%END
+*POT "##1##move"
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 79
+		%NAM "PyroErgebnis"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 52200
+		%POY 28500
+	%END
+	%OID 79
+	%NAM "PyroErgebnis"
+	%POX 53900
+	%POY 21400
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 161
+		%NAM "pyro_has_mul_sample"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 130946
+		%POY 28700
+	%END
+	%OID 161
+	%NAM "pyro_has_mul_sample"
+	%POX 131809
+	%POY 25150
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 162
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%POX 93879
+		%POY 28600
+	%END
+	%OID 162
+	%POX 95136
+	%POY 23275
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 164
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POX 168014
+		%POY 28800
+	%END
+	%OID 164
+	%POX 168484
+	%POY 27025
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*POT "##1##move"
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 79
+		%NAM "PyroErgebnis"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 53900
+		%POY 21400
+	%END
+	%OID 79
+	%NAM "PyroErgebnis"
+	%POX 53900
+	%POY 26300
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 161
+		%NAM "pyro_has_mul_sample"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 131809
+		%POY 25150
+	%END
+	%OID 161
+	%NAM "pyro_has_mul_sample"
+	%POX 131809
+	%POY 27600
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 162
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%POX 95136
+		%POY 23275
+	%END
+	%OID 162
+	%POX 95136
+	%POY 26950
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 164
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POX 168484
+		%POY 27025
+	%END
+	%OID 164
+	%POX 168484
+	%POY 28250
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 79
+		%NAM "PyroErgebnis"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POY 26300
+	%END
+	%OID 79
+	%NAM "PyroErgebnis"
+	%POY 26300
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 164
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POY 28250
+	%END
+	%OID 164
+	%POY 28650
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 149
+		%NAM "Sample_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POY 28900
+	%END
+	%OID 149
+	%NAM "Sample_pyro"
+	%POY 28900
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 79
+		%NAM "PyroErgebnis"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POY 26300
+	%END
+	%OID 79
+	%NAM "PyroErgebnis"
+	%POY 26550
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 149
+		%NAM "Sample_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POY 28900
+	%END
+	%OID 149
+	%NAM "Sample_pyro"
+	%POY 26550
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 161
+		%NAM "pyro_has_mul_sample"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POY 27600
+	%END
+	%OID 161
+	%NAM "pyro_has_mul_sample"
+	%POY 26550
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 162
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%POY 26950
+	%END
+	%OID 162
+	%POY 26550
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 164
+		%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POY 28650
+	%END
+	%OID 164
+	%POY 26550
+	%OWN 2 "Pyroeinlesen"/"1"."pyro_has_mul_sample" 161
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*POT "##1##new_id"
+*CRE GRP
+%BEG
+	%OID 221
+	%NAM "IDPyroErgebnis_1"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."result" 116
+	%TYP A
+	%FLA "S"
+	%MET "MappingOID" "221" "NUM"
+%END
+*TRF gen_mysql_sql
+%BEG
+	%NAM "Pyroeinlesen"
+	%VER "1"
+	&MOD SCH
+	%BEG
+		*OLD SCH
+		%BEG
+			%OID 71
+			%NAM "Pyroeinlesen"
+			%VER "1"
+			%MET "line" "202:15" "V"
+		%END
+		%OID 71
+		%NAM "Pyroeinlesen"
+		%VER "1"
+		%MET "line" "202:15,224:15" "V"
+	%END
+	&MOD ENT
+	%BEG
+		*OLD ENT
+		%BEG
+			%OID 79
+			%NAM "PyroErgebnis"
+			%OWN 1 "Pyroeinlesen"/"1" 71
+			%MET "line" "202:22" "V"
+		%END
+		%OID 79
+		%NAM "PyroErgebnis"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%MET "line" "202:22,224:22" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 198
+			%NAM "chromsom"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%MET "line" "202:23" "V"
+		%END
+		%OID 198
+		%NAM "chromsom"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:23,224:23" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 116
+			%NAM "result"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%MET "line" "202:24" "V"
+		%END
+		%OID 116
+		%NAM "result"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:24,224:24" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 114
+			%NAM "rsname"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%MET "line" "202:25" "V"
+		%END
+		%OID 114
+		%NAM "rsname"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:25,224:25" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 112
+			%NAM "note"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%MET "line" "202:26" "V"
+		%END
+		%OID 112
+		%NAM "note"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "202:26,224:26" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 218
+			%NAM "IDPyroErgebnis"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 218
+		%NAM "IDPyroErgebnis"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "224:27" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 221
+			%NAM "IDPyroErgebnis_1"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 221
+		%NAM "IDPyroErgebnis_1"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%MET "line" "224:28" "V"
+	%END
+	&MOD ENT
+	%BEG
+		*OLD ENT
+		%BEG
+			%OID 149
+			%NAM "Sample_pyro"
+			%OWN 1 "Pyroeinlesen"/"1" 71
+			%MET "line" "202:31" "V"
+		%END
+		%OID 149
+		%NAM "Sample_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%MET "line" "202:31,224:30" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 151
+			%NAM "sample-text"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+			%MET "line" "202:32" "V"
+		%END
+		%OID 151
+		%NAM "sample-text"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:32,224:31" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 156
+			%NAM "EntryID"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+			%MET "line" "202:33" "V"
+		%END
+		%OID 156
+		%NAM "EntryID"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:33,224:32" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 153
+			%NAM "IDSample_has_pyro"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+			%MET "line" "202:34" "V"
+		%END
+		%OID 153
+		%NAM "IDSample_has_pyro"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:34,224:33" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 158
+			%NAM "IDSample_has_pyro_1"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+			%MET "line" "202:35" "V"
+		%END
+		%OID 158
+		%NAM "IDSample_has_pyro_1"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%MET "line" "202:35,224:34" "V"
+	%END
+	&MOD ENT
+	%BEG
+		*OLD ENT
+		%BEG
+			%OID 83
+			%NAM "Samples"
+			%OWN 1 "Pyroeinlesen"/"1" 71
+			%MET "line" "202:37" "V"
+		%END
+		%OID 83
+		%NAM "Samples"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%MET "line" "202:37,224:36" "V"
+	%END
+	&MOD SIA
+	%BEG
+		*OLD SIA
+		%BEG
+			%OID 118
+			%NAM "SampleID"
+			%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+			%MET "line" "202:38" "V"
+		%END
+		%OID 118
+		%NAM "SampleID"
+		%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+		%MET "line" "202:38,224:37" "V"
+	%END
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 120
+			%NAM "IDSamples"
+			%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+			%MET "line" "202:39" "V"
+		%END
+		%OID 120
+		%NAM "IDSamples"
+		%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+		%MET "line" "202:39,224:38" "V"
+	%END
+	*POT "§Generate SQL  20180607  085647"
+%END
+*POT "##1##delete"
+*DEL GRP
+%BEG
+	%OID 218
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."rsname" 114
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "218" "NUM"
+	%MET "line" "224:27" "V"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 218
+			%NAM "IDPyroErgebnis"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 218
+		%NAM "IDPyroErgebnis"
+	%END
+%END
+*POT "##1##delete"
+*DEL GRP
+%BEG
+	%OID 221
+	%NAM "IDPyroErgebnis_1"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."result" 116
+	%TYP A
+	%FLA "S"
+	%MET "MappingOID" "221" "NUM"
+	%MET "line" "224:28" "V"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 221
+			%NAM "IDPyroErgebnis_1"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 221
+		%NAM "IDPyroErgebnis_1"
+	%END
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 235
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."chromsom" 198
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "235" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 235
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 235
+	%NAM "sampletext"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 237
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."note" 112
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "237" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 237
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 237
+	%NAM "SNPID"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_id"
+*CRE GRP
+%BEG
+	%OID 239
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."SNPID" 237
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "239" "NUM"
+%END
+*POT "##1##delete"
+*DEL SIA
+%BEG
+	%OID 235
+	%NAM "sampletext"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."chromsom" 198
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "235" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##delete"
+*DEL GRP
+%BEG
+	%OID 153
+	%NAM "IDSample_has_pyro"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%COM 6 "Pyroeinlesen"/"1"."Sample_pyro"."sample-text" 151
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "153" "NUM"
+	%MET "line" "202:34,224:33" "V"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 153
+			%NAM "IDSample_has_pyro"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%END
+		%OID 153
+		%NAM "IDSample_has_pyro"
+	%END
+%END
+*POT "##1##delete"
+*DEL GRP
+%BEG
+	%OID 158
+	%NAM "IDSample_has_pyro_1"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%COM 6 "Pyroeinlesen"/"1"."Sample_pyro"."EntryID" 156
+	%TYP A
+	%FLA "S"
+	%MET "MappingOID" "158" "NUM"
+	%MET "line" "202:35,224:34" "V"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 158
+			%NAM "IDSample_has_pyro_1"
+			%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%END
+		%OID 158
+		%NAM "IDSample_has_pyro_1"
+	%END
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 151
+		%NAM "sample-text"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%CAR 1-1
+		%TYP V
+		%FLA "r"
+		%LEN 7
+		%DEC 0
+	%END
+	%OID 151
+	%NAM "journal_number"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%CAR 1-1
+	%TYP V
+	%LEN 7
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 156
+		%NAM "EntryID"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%CAR 1-1
+		%TYP V
+		%FLA "r"
+		%LEN 15
+		%DEC 0
+	%END
+	%OID 156
+	%NAM "SNPID"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%CAR 1-1
+	%TYP V
+	%LEN 15
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 244
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%PRV 6 "Pyroeinlesen"/"1"."Sample_pyro"."SNPID" 156
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "244" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 244
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 244
+	%NAM "match_result"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%CAR 1-1
+	%TYP V
+	%LEN 5
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 246
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%PRV 6 "Pyroeinlesen"/"1"."Sample_pyro"."match_result" 244
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "246" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 246
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 246
+	%NAM "SNP_to_journal_number"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%CAR 1-1
+	%TYP N
+	%LEN 10
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_id"
+*CRE GRP
+%BEG
+	%OID 248
+	%NAM "IDSample_pyro"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%COM 6 "Pyroeinlesen"/"1"."Sample_pyro"."SNP_to_journal_number" 246
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "248" "NUM"
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 251
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+	%PRV 6 "Pyroeinlesen"/"1"."Samples"."SampleID" 118
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "251" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 251
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 251
+	%NAM "..."
+	%OWN 3 "Pyroeinlesen"/"1"."Samples" 83
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##delete"
+*DEL ENT
+%BEG
+	%OID 242
+	%NAM "WES"
+	%POX 87800
+	%POY 86800
+	%OWN 1 "Pyroeinlesen"/"1" 71
+	%MET "MappingOID" "242" "NUM"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+%END
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 83
+		%NAM "Samples"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 211908
+	%END
+	%OID 83
+	%NAM "Samples"
+	%POX 201558
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 172
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%ETR 3 "Pyroeinlesen"/"1"."Samples" 83
+		%POX 212008
+	%END
+	%OID 172
+	%POX 199768
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+	%ETR 3 "Pyroeinlesen"/"1"."Samples" 83
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 177
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%POX 212008
+	%END
+	%OID 177
+	%POX 190128
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 169
+		%NAM "sample_has_one_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 212108
+	%END
+	%OID 169
+	%NAM "sample_has_one_pyro"
+	%POX 196738
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 193
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POX 212208
+	%END
+	%OID 193
+	%POX 203348
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 149
+		%NAM "Sample_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 212308
+	%END
+	%OID 149
+	%NAM "Sample_pyro"
+	%POX 205698
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 83
+		%NAM "Samples"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 201558
+	%END
+	%OID 83
+	%NAM "Samples"
+	%POX 205698
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD REL
+%BEG
+	*OLD REL
+	%BEG
+		%OID 169
+		%NAM "sample_has_one_pyro"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+		%POX 196738
+	%END
+	%OID 169
+	%NAM "sample_has_one_pyro"
+	%POX 205698
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 172
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%ETR 3 "Pyroeinlesen"/"1"."Samples" 83
+		%POX 199768
+	%END
+	%OID 172
+	%POX 205698
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+	%ETR 3 "Pyroeinlesen"/"1"."Samples" 83
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 177
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%POX 190128
+	%END
+	%OID 177
+	%POX 205698
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+%END
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 193
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%POX 203348
+	%END
+	%OID 193
+	%POX 205698
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+%END
+*POT "##1##delete"
+*DEL GRP
+%BEG
+	%OID 239
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."SNPID" 237
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "239" "NUM"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 239
+			%NAM "IDPyroErgebnis"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%END
+		%OID 239
+		%NAM "IDPyroErgebnis"
+	%END
+%END
+*POT "##1##getent"
+*MOD ENT
+%BEG
+	*OLD ENT
+	%BEG
+		%OID 83
+		%NAM "Samples"
+		%OWN 1 "Pyroeinlesen"/"1" 71
+	%END
+	%OID 83
+	%NAM "patienten"
+	%OWN 1 "Pyroeinlesen"/"1" 71
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 118
+		%NAM "SampleID"
+		%OWN 3 "Pyroeinlesen"/"1"."patienten" 83
+		%CAR 1-1
+		%TYP V
+		%FLA "r"
+		%LEN 7
+		%DEC 0
+	%END
+	%OID 118
+	%NAM "journal_number"
+	%OWN 3 "Pyroeinlesen"/"1"."patienten" 83
+	%CAR 1-1
+	%TYP V
+	%LEN 7
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 237
+		%NAM "SNPID"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 237
+	%NAM "SNPID"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP N
+	%LEN 1
+	%DEC 0
+	%FLA "sr"
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 253
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."SNPID" 237
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "253" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 253
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 253
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%CAR 1-1
+	%TYP N
+	%LEN 65535
+	%DEC 0
+	%FLA "r"
+%END
+*POT "##1##new_id"
+*CRE GRP
+%BEG
+	%OID 255
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."IDPyroErgebnis" 253
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "255" "NUM"
+%END
+*POT "##1##delete"
+*DEL SIA
+%BEG
+	%OID 253
+	%NAM "IDPyroErgebnis"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%PRV 6 "Pyroeinlesen"/"1"."PyroErgebnis"."SNPID" 237
+	%CAR 1-1
+	%TYP N
+	%LEN 65535
+	%DEC 0
+	%MET "MappingOID" "253" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+	&MOD GRP
+	%BEG
+		*OLD GRP
+		%BEG
+			%OID 255
+			%NAM "IDPyroErgebnis"
+			%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."IDPyroErgebnis" 253
+		%END
+		%OID 255
+		%NAM "IDPyroErgebnis"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%COM #
+	%END
+	&DEL GRP
+	%BEG
+		%OID 255
+		%NAM "IDPyroErgebnis"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%TYP A
+		%FLA "P"
+		%MET "MappingOID" "255" "NUM"
+		&MOD GRP
+		%BEG
+			*OLD GRP
+			%BEG
+				%OID 255
+				%NAM "IDPyroErgebnis"
+				%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+			%END
+			%OID 255
+			%NAM "IDPyroErgebnis"
+		%END
+	%END
+%END
+*POT "##1##new_id"
+*CRE GRP
+%BEG
+	%OID 258
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."SNPID" 237
+	%TYP A
+	%FLA "P"
+	%MET "MappingOID" "258" "NUM"
+%END
+*POT "##1##getgrp"
+*MOD GRP
+%BEG
+	*OLD GRP
+	%BEG
+		%OID 258
+		%NAM "IDPyroErgebnis"
+		%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+		%TYP A
+		%FLA "P"
+		%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."SNPID" 237
+	%END
+	%OID 258
+	%NAM "IDPyroErgebnis"
+	%OWN 3 "Pyroeinlesen"/"1"."PyroErgebnis" 79
+	%COM 6 "Pyroeinlesen"/"1"."PyroErgebnis"."SNPID" 237
+	%TYP A
+	%FLA "P"
+%END
+*POT "##1##getrole"
+*MOD ROL
+%BEG
+	*OLD ROL
+	%BEG
+		%OID 193
+		%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+		%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%CAR 0-N
+	%END
+	%OID 193
+	%OWN 2 "Pyroeinlesen"/"1"."sample_has_one_pyro" 169
+	%ETR 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%CAR 1-1
+%END
+*POT "##1##new_att"
+*CRE SIA
+%BEG
+	%OID 262
+	%NAM "New attribute"
+	%POX 0
+	%POY 0
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%PRV 6 "Pyroeinlesen"/"1"."Sample_pyro"."SNPID" 156
+	%CAR 1-1
+	%TYP A
+	%LEN 1
+	%MET "MappingOID" "262" "NUM"
+	%MET "physLen" "0" "NU"
+	%MET "Stereotype" "#E#m#P#t#Y#" "VUPM"
+	%MET "Value constraint" "#E#m#P#t#Y#" "VUM"
+%END
+*POT "##1##getatt"
+*MOD SIA
+%BEG
+	*OLD SIA
+	%BEG
+		%OID 262
+		%NAM "New attribute"
+		%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+		%CAR 1-1
+		%TYP A
+		%FLA "r"
+		%LEN 1
+		%DEC 0
+	%END
+	%OID 262
+	%NAM "quality"
+	%OWN 3 "Pyroeinlesen"/"1"."Sample_pyro" 149
+	%CAR 1-1
+	%TYP V
+	%LEN 7
+	%DEC 0
+	%FLA "r"
+%END
+
